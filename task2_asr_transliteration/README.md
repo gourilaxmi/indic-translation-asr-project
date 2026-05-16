@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Task 2 — ASR-Based Transcription and Transliteration System
 
 An end-to-end pipeline that transcribes audio using **OpenAI Whisper** and
