@@ -1,7 +1,4 @@
-"""
-test_pipeline.py - Unit and integration tests for the ASR + Transliteration pipeline.
-Run with:  pytest tests/test_pipeline.py -v
-"""
+
 
 import os
 import sys
@@ -18,9 +15,6 @@ from utils import save_transcript, save_transliteration, list_output_files
 from model_config import SAMPLE_RATE, CHUNK_DURATION_S
 
 
-# ---------------------------------------------------------------
-# Fixtures
-# ---------------------------------------------------------------
 
 @pytest.fixture
 def buffer():
@@ -38,9 +32,6 @@ def tmp_output(tmp_path):
     return str(tmp_path)
 
 
-# ---------------------------------------------------------------
-# Buffer tests
-# ---------------------------------------------------------------
 
 class TestAudioBufferManager:
 
@@ -91,10 +82,6 @@ class TestAudioBufferManager:
         assert buffer.size() == 1
 
 
-# ---------------------------------------------------------------
-# Transliteration tests
-# ---------------------------------------------------------------
-
 class TestTransliteration:
 
     def test_list_scripts_nonempty(self):
@@ -122,15 +109,11 @@ class TestTransliteration:
             transliterate_text("test", "nonexistent_script", "tamil")
 
     def test_same_source_target(self):
-        # Transliterating to the same script should be a no-op
         text = "hello"
         result = transliterate_text(text, "itrans", "itrans")
         assert isinstance(result, str)
 
 
-# ---------------------------------------------------------------
-# Utility tests
-# ---------------------------------------------------------------
 
 class TestUtils:
 
