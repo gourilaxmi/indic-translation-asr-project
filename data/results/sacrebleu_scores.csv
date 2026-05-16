@@ -1,0 +1,2 @@
+corpus_bleu,avg_sentence_bleu,max_sentence_bleu,min_sentence_bleu
+7.28,20.59,100.0,0.0

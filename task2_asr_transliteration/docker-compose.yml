@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  asr-system:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: asr-system:latest
+    container_name: asr_transliteration
+    ports:
+      - "7860:7860"
+    volumes:
+      # Persist model cache so Whisper isn't re-downloaded on every run
+      - hf_cache:/root/.cache/huggingface
+      # Persist outputs on the host
+      - ./outputs:/app/outputs
+      # Mount sample inputs for easy testing
+      - ./sample_inputs:/app/sample_inputs:ro
+    environment:
+      - PYTHONPATH=/app/app:/app/models
+      # Uncomment if you have a GPU available
+      # - NVIDIA_VISIBLE_DEVICES=all
+    restart: unless-stopped
+
+volumes:
+  hf_cache:

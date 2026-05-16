@@ -1,0 +1,76 @@
+model,sentence_id,english,tamil_translation,source_token_count,target_token_count,expansion_ratio,avg_word_length,subword_fragmentation,unknown_token_rate
+IndicTrans2,1,"Hello, how are you?","வணக்கம், எப்படி இருக்கிறீர்கள்?",4,3,0.75,9.6667,1.0,0.0
+IndicTrans2,2,The sun rises in the east.,சூரியன் கிழக்கே உதிக்கிறது.,6,3,0.5,8.3333,1.0,0.0
+IndicTrans2,3,She is reading a book.,அவள் ஒரு புத்தகத்தைப் படிக்கிறாள்.,5,4,0.8,7.75,1.0,0.0
+IndicTrans2,4,Water is essential for life.,உயிர் வாழ்வதற்கு நீர் இன்றியமையாதது.,5,4,0.8,8.25,1.0,0.0
+IndicTrans2,5,He went to the market.,சந்தைக்குப் போனார்.,5,2,0.4,9.0,1.0,0.0
+IndicTrans2,6,The weather is very pleasant today and we should go for a walk.,"இன்று வானிலை மிகவும் இனிமையானது, நாம் நடந்து செல்ல வேண்டும்.",13,8,0.6154,6.625,1.0,0.0
+IndicTrans2,7,I am going to the market to buy vegetables and fruits for dinner.,நான் இரவு உணவிற்கு காய்கறிகள் மற்றும் பழங்களை வாங்க சந்தைக்குச் செல்கிறேன்.,13,9,0.6923,7.4444,1.0,0.0
+IndicTrans2,8,She has a lot of old books which she inherited from her grandparents.,அவர் தனது தாத்தா பாட்டிகளிடமிருந்து மரபுரிமையாகப் பெற்ற பல பழைய புத்தகங்கள் அவரிடம் உள்ளன.,13,11,0.8462,7.2727,1.0,0.0
+IndicTrans2,9,The students worked very hard to prepare for their final examinations.,மாணவர்கள் தங்கள் இறுதித் தேர்வுகளுக்குத் தயாராவதற்கு மிகவும் கடினமாக உழைத்தனர்.,11,8,0.7273,9.0,1.0,0.0
+IndicTrans2,10,My friend invited me to his birthday party and I will give him a gift.,"என் நண்பர் தனது பிறந்தநாள் விழாவிற்கு என்னை அழைத்தார், நான் அவருக்கு ஒரு பரிசை வழங்குவேன்.",15,12,0.8,6.5833,1.0,0.0
+IndicTrans2,11,"If you had met me at that time, we would have gone out to eat together at the new restaurant.","அந்த நேரத்தில் நீங்கள் என்னை சந்தித்திருந்தால், நாங்கள் புதிய உணவகத்தில் ஒன்றாக சாப்பிட வெளியே சென்றிருப்போம்.",20,12,0.6,8.25,1.0,0.0
+IndicTrans2,12,The government announced several new policies to improve the quality of education in rural areas.,கிராமப்புறங்களில் கல்வியின் தரத்தை மேம்படுத்துவதற்காக அரசாங்கம் பல புதிய கொள்கைகளை அறிவித்தது.,15,9,0.6,9.5556,1.0,0.0
+IndicTrans2,13,Scientists have discovered a new species of plant in the Amazon rainforest that may have medicinal properties.,அமேசான் மழைக்காடுகளில் மருத்துவ குணங்களைக் கொண்ட ஒரு புதிய தாவர இனத்தை விஞ்ஞானிகள் கண்டுபிடித்துள்ளனர்.,17,11,0.6471,8.4545,1.0,0.0
+IndicTrans2,14,The rapid development of artificial intelligence is transforming industries and creating new opportunities.,செயற்கை நுண்ணறிவின் விரைவான வளர்ச்சி தொழில்துறைகளை மாற்றியமைத்து புதிய வாய்ப்புகளை உருவாக்குகிறது.,13,9,0.6923,10.0,1.0,0.0
+IndicTrans2,15,"Despite the challenges posed by climate change, many countries are investing in renewable energy sources.","பருவநிலை மாற்றத்தால் ஏற்படும் சவால்கள் இருந்தபோதிலும், பல நாடுகள் புதுப்பிக்கத்தக்க எரிசக்தி ஆதாரங்களில் முதலீடு செய்கின்றன.",15,12,0.8,9.4167,1.0,0.0
+NLLB-200,1,"Hello, how are you?","வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?",6,8,1.3333,9.0,2.0,0.0
+NLLB-200,2,The sun rises in the east.,கிழக்கில் சூரியன் உதிக்கிறது.,8,9,1.125,9.0,3.0,0.0
+NLLB-200,3,She is reading a book.,அவள் ஒரு புத்தகத்தை படிக்கிறாள்.,6,8,1.3333,7.25,2.0,0.0
+NLLB-200,4,Water is essential for life.,தண்ணீர் வாழ்க்கைக்கு இன்றியமையாதது.,6,10,1.6667,11.0,3.3333,0.0
+NLLB-200,5,He went to the market.,அவர் சந்தைக்கு சென்றார்.,6,6,1.0,7.3333,2.0,0.0
+NLLB-200,6,The weather is very pleasant today and we should go for a walk.,"இன்றைய வானிலை மிகவும் இனிமையானது, நாம் ஒரு நடைக்குச் செல்ல வேண்டும்.",15,18,1.2,6.6667,2.0,0.0
+NLLB-200,7,I am going to the market to buy vegetables and fruits for dinner.,நான் சந்தைக்குச் சென்று இரவு உணவிற்கு காய்கறிகளையும் பழங்களையும் வாங்குகிறேன்.,15,18,1.2,8.875,2.25,0.0
+NLLB-200,8,She has a lot of old books which she inherited from her grandparents.,அவளது தாத்தா-பாப்பாவிடம் இருந்து பெற்ற பல பழைய புத்தகங்கள் அவளிடம் உள்ளன.,17,19,1.1176,7.2222,2.1111,0.0
+NLLB-200,9,The students worked very hard to prepare for their final examinations.,மாணவர்கள் தங்கள் இறுதித் தேர்வுகளுக்குத் தயாராக கடினமாக உழைத்தனர்.,13,18,1.3846,8.5714,2.5714,0.0
+NLLB-200,10,My friend invited me to his birthday party and I will give him a gift.,என் நண்பர் தனது பிறந்தநாள் விருந்துக்கு என்னை அழைத்தார் நான் அவருக்கு ஒரு பரிசு கொடுப்பேன்.,16,20,1.25,6.6667,1.6667,0.0
+NLLB-200,11,"If you had met me at that time, we would have gone out to eat together at the new restaurant.","நீங்கள் என்னை அந்த நேரத்தில் சந்தித்திருந்தால், நாங்கள் புதிய உணவகத்தில் ஒன்றாக சாப்பிடச் சென்றிருப்போம்.",22,23,1.0455,8.6364,2.0909,0.0
+NLLB-200,12,The government announced several new policies to improve the quality of education in rural areas.,கிராமப்புறங்களில் கல்வியின் தரத்தை மேம்படுத்துவதற்காக அரசாங்கம் பல புதிய கொள்கைகளை அறிவித்தது.,16,19,1.1875,9.5556,2.1111,0.0
+NLLB-200,13,Scientists have discovered a new species of plant in the Amazon rainforest that may have medicinal properties.,விஞ்ஞானிகள் அமேசான் மழைக்காடுகளில் ஒரு புதிய வகையான தாவரத்தை கண்டுபிடித்துள்ளனர்.,23,28,1.2174,9.25,3.5,0.0
+NLLB-200,14,The rapid development of artificial intelligence is transforming industries and creating new opportunities.,செயற்கை நுண்ணறிவின் வேகமான வளர்ச்சி தொழில்துறைகளை மாற்றி புதிய வாய்ப்புகளை உருவாக்கி வருகிறது.,15,24,1.6,8.5,2.4,0.0
+NLLB-200,15,"Despite the challenges posed by climate change, many countries are investing in renewable energy sources.","காலநிலை மாற்றத்தால் ஏற்படும் சவால்கள் இருந்தபோதிலும், பல நாடுகள் புதுப்பிக்கத்தக்க எரிசக்தி ஆதாரங்களில் முதலீடு செய்கின்றன.",21,32,1.5238,9.3333,2.6667,0.0
+Helsinki-dra,1,"Hello, how are you?","ஹலோ, எப்படி இருக்கிறீர்கள்?",6,8,1.3333,8.3333,2.6667,0.375
+Helsinki-dra,2,The sun rises in the east.,கிழக்கு திசையில் சூரியன் உதிக்கும்.,7,9,1.2857,8.0,2.25,0.4444
+Helsinki-dra,3,She is reading a book.,அவள் ஒரு புத்தகத்தை வாசிக்கிறாள்.,6,9,1.5,7.5,2.25,0.3333
+Helsinki-dra,4,Water is essential for life.,தண்ணீர் உயிருக்கு இன்றியமையாதது.,6,7,1.1667,10.0,2.3333,0.4286
+Helsinki-dra,5,He went to the market.,அவர் சந்தைக்கு சென்றார்.,6,7,1.1667,7.3333,2.3333,0.2857
+Helsinki-dra,6,The weather is very pleasant today and we should go for a walk.,"இன்று வானிலை மிகவும் இனிமையாக இருக்கிறது, நாம் ஒரு நடைக்குப் போக வேண்டும்.",14,22,1.5714,6.5,2.2,0.2727
+Helsinki-dra,7,I am going to the market to buy vegetables and fruits for dinner.,"நான் சந்தைக்கு செல்கிறேன், இரவு உணவுக்கு காய்கறிகளையும் பழங்களையும் வாங்க.",14,18,1.2857,8.375,2.25,0.3333
+Helsinki-dra,8,She has a lot of old books which she inherited from her grandparents.,அவள் தன் தாத்தா பாட்டியிடமிருந்து பெற்ற பழைய புத்தகங்கள் பல இருக்கின்றன.,14,19,1.3571,7.1111,2.1111,0.3158
+Helsinki-dra,9,The students worked very hard to prepare for their final examinations.,மாணவர்கள் தங்களுடைய இறுதி ஆய்வுகளுக்காக தயாராக மிகவும் கடினமாக உழைத்தனர்.,13,17,1.3077,8.25,2.125,0.4118
+Helsinki-dra,10,My friend invited me to his birthday party and I will give him a gift.,என் நண்பர் தன் பிறந்த நாள் பார்ட்டிக்கு என்னை அழைத்தார்... ... நான் அவனுக்கு ஒரு பரிசு கொடுப்பேன்.,16,29,1.8125,6.0714,2.0714,0.2414
+Helsinki-dra,11,"If you had met me at that time, we would have gone out to eat together at the new restaurant.","அந்தச் சமயத்தில் நீங்கள் என்னை சந்தித்திருந்தால், புதிய ரெஸ்டாரன்ட்டில் ஒன்றாக சேர்ந்து சாப்பிட நாங்கள் புறப்பட்டிருப்போம்.",22,26,1.1818,9.3333,2.1667,0.3462
+Helsinki-dra,12,The government announced several new policies to improve the quality of education in rural areas.,கிராமப்புறங்களில் கல்வியின் தரத்தை மேம்படுத்த அரசாங்கம் பல புதிய கொள்கைகளை அறிவித்தது.,16,19,1.1875,8.6667,2.1111,0.3684
+Helsinki-dra,13,Scientists have discovered a new species of plant in the Amazon rainforest that may have medicinal properties.,அமேசான் மழைக்காடுகளில் ஒரு புதிய இனத்தை விஞ்ஞானிகள் கண்டுபிடித்திருக்கிறார்கள்.,20,15,0.75,10.4286,2.1429,0.3333
+Helsinki-dra,14,The rapid development of artificial intelligence is transforming industries and creating new opportunities.,"செயற்கை புத்திக்கூர்மையின் விரைவான வளர்ச்சி, தொழிற்சாலைகளை மாற்றுகிறது, புதிய வாய்ப்புகளை உருவாக்குகிறது.",14,21,1.5,10.7778,2.3333,0.381
+Helsinki-dra,15,"Despite the challenges posed by climate change, many countries are investing in renewable energy sources.","சீதோஷ்ண மாற்றத்தால் வரும் சவால்களின் மத்தியிலும், பல நாடுகள் புதுப்பிக்கக்கூடிய ஆற்றல் மூலங்களில் முதலீடு செய்துவருகின்றன.",19,26,1.3684,9.25,2.1667,0.3846
+mBART-50,1,"Hello, how are you?",எவ்வாறு இருக்கிறீர்கள்?,6,7,1.1667,11.0,3.5,0.0
+mBART-50,2,The sun rises in the east.,சூரியன் கிழக்கில் உதயமாகிறது.,9,10,1.1111,9.0,3.3333,0.0
+mBART-50,3,She is reading a book.,அவள் ஒரு புத்தகத்தை ஓதிக்கொண்டிருக்கின்றாள்.,6,10,1.6667,10.25,2.5,0.0
+mBART-50,4,Water is essential for life.,தண்ணீர் உயிர்த்திற்கானது.,6,7,1.1667,12.0,3.5,0.0
+mBART-50,5,He went to the market.,அவர் சந்தைக்கு சென்றார்.,6,6,1.0,7.3333,2.0,0.0
+mBART-50,6,The weather is very pleasant today and we should go for a walk.,இன்று பருவநிலை மிகவும் சுகமாக உள்ளது. நாம் ஒரு நடையில் செல்ல வேண்டும்.,14,17,1.2143,6.1,1.7,0.0
+mBART-50,7,I am going to the market to buy vegetables and fruits for dinner.,நான் விருந்துக்கு காய்கறிகள் மற்றும் பழங்களை வாங்கும் பொருட்டு சந்தைக்கு செல்கிறேன்.,14,21,1.5,8.4444,2.3333,0.0
+mBART-50,8,She has a lot of old books which she inherited from her grandparents.,தன்னுடைய மூதாதையரிடம் இருந்து பாரம்பரியமாகப் பெற்ற பல பழைய நூல்களை அவள் வைத்திருக்கிறாள்.,18,25,1.3889,8.0,2.5,0.0
+mBART-50,9,The students worked very hard to prepare for their final examinations.,இறுதிப் பரீட்சைக்கு தயார் செய்வதற்கு மாணவர்கள் கடினமாக உழைத்தனர்.,13,20,1.5385,8.4286,2.8571,0.0
+mBART-50,10,My friend invited me to his birthday party and I will give him a gift.,அவரது பிறந்தநாள் பண்டிகைக்கு எனது நண்பர் என்னை அழைப்பு விடுத்தார். அவருக்கு ஒரு நன்கொடையை நான் கொடுப்பேன்.,17,26,1.5294,7.2308,2.0,0.0
+mBART-50,11,"If you had met me at that time, we would have gone out to eat together at the new restaurant.","அப்போது நீங்கள் என்னை சந்தித்திருந்தால், நாங்கள் புதிய உணவகத்தில் ஒன்றிணைந்து போயிருப்போம்.",22,21,0.9545,9.2222,2.3333,0.0
+mBART-50,12,The government announced several new policies to improve the quality of education in rural areas.,கிராமப்புறங்களில் கல்வியின் தரத்தை மேம்படுத்துவதற்கான பல்வேறு புதிய கொள்கைகளை அரசு அறிவித்தது.,16,21,1.3125,9.5556,2.3333,0.0
+mBART-50,13,Scientists have discovered a new species of plant in the Amazon rainforest that may have medicinal properties.,அமேசான் மழைக்காடுகளில் ஒரு புதிய வகையான தாவரத்தை விஞ்ஞானிகள் கண்டுபிடித்துள்ளனர்.,22,25,1.1364,9.25,3.125,0.0
+mBART-50,14,The rapid development of artificial intelligence is transforming industries and creating new opportunities.,செயற்கை நுண்ணறிவுகளின் விரைவான வளர்ச்சி தொழில்துறைகளை மாற்றி புதிய வாய்ப்புகளை உருவாக்கி வருகிறது.,17,24,1.4118,8.9,2.4,0.0
+mBART-50,15,"Despite the challenges posed by climate change, many countries are investing in renewable energy sources.","பருவநிலை மாற்றத்தால் ஏற்படும் சவால்கள் இருந்தபோதிலும், பல நாடுகள் புதுப்பிக்கத்தக்க எரிசக்தி ஆதாரங்களில் முதலீடு செய்கின்றன.",21,33,1.5714,9.4167,2.75,0.0
+MADLAD-400,1,"Hello, how are you?","வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?",6,9,1.5,9.0,2.25,0.0
+MADLAD-400,2,The sun rises in the east.,சூரியன் கிழக்கில் உதிக்கும்.,8,10,1.25,8.6667,3.3333,0.0
+MADLAD-400,3,She is reading a book.,அவள் ஒரு புத்தகம் படிக்கிறாள்.,6,9,1.5,6.75,2.25,0.0
+MADLAD-400,4,Water is essential for life.,வாழ்க்கைக்கு தண்ணீர் அவசியம்.,6,9,1.5,9.0,3.0,0.0
+MADLAD-400,5,He went to the market.,அவர் சந்தையில் சென்றார்.,6,6,1.0,7.3333,2.0,0.0
+MADLAD-400,6,The weather is very pleasant today and we should go for a walk.,"இன்று வானிலை மிகவும் மகிழ்ச்சியானது, நாம் ஒரு நடைப்பயணம் செல்ல வேண்டும்.",14,21,1.5,7.1111,2.3333,0.0
+MADLAD-400,7,I am going to the market to buy vegetables and fruits for dinner.,நான் மாலை உணவுக்காக காய்கறிகள் மற்றும் பழங்களை வாங்க சந்தைக்கு செல்கிறேன்.,16,21,1.3125,7.3333,2.3333,0.0
+MADLAD-400,8,She has a lot of old books which she inherited from her grandparents.,"அவர் தனது தாத்தா, பாட்டிகளிடமிருந்து வாரிசாகப் பெற்ற பல பழைய புத்தகங்களைக் கொண்டிருந்தார்.",18,28,1.5556,8.1,2.8,0.0
+MADLAD-400,9,The students worked very hard to prepare for their final examinations.,மாணவர்கள் தங்களது இறுதித் தேர்வுகளுக்குத் தயாராக மிகவும் கடினமாக உழைத்தனர்.,13,25,1.9231,8.5,3.125,0.0
+MADLAD-400,10,My friend invited me to his birthday party and I will give him a gift.,என் நண்பர் என்னை அவரது பிறந்தநாள் விழா அழைத்தார் மற்றும் நான் அவருக்கு ஒரு பரிசு கொடுக்க வேண்டும்.,17,28,1.6471,6.1429,2.0,0.0
+MADLAD-400,11,"If you had met me at that time, we would have gone out to eat together at the new restaurant.","நீங்கள் அந்த நேரத்தில் என்னை சந்தித்திருந்தால், நாம் புதிய உணவகத்தில் சேர்ந்து சாப்பிட வெளியே சென்றிருப்பேன்.",23,25,1.087,8.1667,2.0833,0.0
+MADLAD-400,12,The government announced several new policies to improve the quality of education in rural areas.,ஊரகப் பகுதிகளில் கல்வியின் தரத்தை மேம்படுத்துவதற்கான பல புதிய கொள்கைகளை அரசு அறிவித்துள்ளது.,17,27,1.5882,8.3,2.7,0.0
+MADLAD-400,13,Scientists have discovered a new species of plant in the Amazon rainforest that may have medicinal properties.,"அறிவியலாளர்கள் அமேசான் மழைக்காடுகளில் ஒரு புதிய வகை தாவரத்தை கண்டுபிடித்துள்ளனர், அது மருத்துவ குணங்களைக் கொண்டிருக்கலாம்.",22,36,1.6364,9.25,3.0,0.0
+MADLAD-400,14,The rapid development of artificial intelligence is transforming industries and creating new opportunities.,செயற்கை நுண்ணறிவின் வேகமான வளர்ச்சி தொழில்துறைகளை மாற்றி அமைத்து புதிய வாய்ப்புகளை உருவாக்கி வருகிறது.,18,31,1.7222,8.3636,2.8182,0.0
+MADLAD-400,15,"Despite the challenges posed by climate change, many countries are investing in renewable energy sources.","பருவநிலை மாற்றம் ஏற்படுத்தியுள்ள சவால்கள் இருந்தபோதிலும், பல நாடுகள் புதுப்பிக்கத்தக்க எரிசக்தி மூலங்களில் முதலீடு செய்து வருகின்றன.",21,39,1.8571,9.2308,3.0,0.0

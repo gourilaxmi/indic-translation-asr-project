@@ -1,0 +1,6 @@
+model,avg_source_tokens,avg_target_tokens,avg_expansion_ratio,avg_word_length,avg_subword_fragmentation,avg_unknown_token_rate
+Helsinki-dra,12.8667,16.8,1.3183,8.3954,2.2341,0.3504
+IndicTrans2,11.3333,7.8,0.6847,8.3735,1.0,0.0
+MADLAD-400,14.0667,21.6,1.5053,8.0832,2.6018,0.0
+NLLB-200,13.6667,17.3333,1.279,8.4574,2.3801,0.0
+mBART-50,13.8,18.2,1.3113,8.9421,2.611,0.0

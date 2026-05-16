@@ -1,0 +1,31 @@
+sentence_id,sentence,token_count,subword_frag_rate,avg_chars_per_token,model,pattern_type
+2,நான் சாப்பிட்டேன்.,5,0.6,3.333,Helsinki-dra,high_fragmentation
+1,அவன் பள்ளிக்கு போகிறான்.,7,0.5714,3.75,Helsinki-dra,high_fragmentation
+13,விவசாயிகள் கடினமாக உழைக்கிறார்கள்.,7,0.5714,4.0,Helsinki-dra,high_fragmentation
+19,திருவள்ளுவர் எழுதிய திருக்குறள் உலகப் புகழ் பெற்றது.,13,0.5385,4.429,Helsinki-dra,low_fragmentation
+5,கணினி அறிவியல் படிப்பு மிகவும் சுவாரஸ்யமானது.,11,0.5455,4.333,Helsinki-dra,low_fragmentation
+6,செயற்கை நுண்ணறிவு தொழில்நுட்பம் வேகமாக வளர்கிறது.,11,0.5455,4.333,Helsinki-dra,low_fragmentation
+10,தகவல் தொழில்நுட்பத்தில் புதிய கண்டுபிடிப்புகள் வருகின்றன.,60,0.9667,1.255,IndicTrans2,high_fragmentation
+7,மருத்துவமனையில் நோயாளிகளுக்கு சிகிச்சை அளிக்கிறார்கள்.,57,0.9649,1.264,IndicTrans2,high_fragmentation
+8,பொருளாதார வளர்ச்சி நாட்டின் முன்னேற்றத்திற்கு அவசியம்.,57,0.9649,1.269,IndicTrans2,high_fragmentation
+2,நான் சாப்பிட்டேன்.,21,0.9048,1.737,IndicTrans2,low_fragmentation
+1,அவன் பள்ளிக்கு போகிறான்.,27,0.9259,1.583,IndicTrans2,low_fragmentation
+3,தமிழ் மொழி மிகவும் அழகானது.,30,0.9333,1.538,IndicTrans2,low_fragmentation
+11,அவள் மிகவும் புத்திசாலியான மாணவி.,13,0.6923,2.308,MADLAD-400,high_fragmentation
+6,செயற்கை நுண்ணறிவு தொழில்நுட்பம் வேகமாக வளர்கிறது.,21,0.6667,2.143,MADLAD-400,high_fragmentation
+13,விவசாயிகள் கடினமாக உழைக்கிறார்கள்.,12,0.6667,2.667,MADLAD-400,high_fragmentation
+12,நம் நாட்டின் பண்பாடு மிகவும் சிறந்தது.,11,0.1818,3.4,MADLAD-400,low_fragmentation
+2,நான் சாப்பிட்டேன்.,6,0.3333,2.833,MADLAD-400,low_fragmentation
+14,குழந்தைகளுக்கு தரமான கல்வி வழங்க வேண்டும்.,9,0.3333,4.222,MADLAD-400,low_fragmentation
+17,நெடுஞ்சாலை வழியாக பயணம் செய்தோம்.,11,0.5455,2.727,NLLB-200,high_fragmentation
+6,செயற்கை நுண்ணறிவு தொழில்நுட்பம் வேகமாக வளர்கிறது.,15,0.5333,3.0,NLLB-200,high_fragmentation
+7,மருத்துவமனையில் நோயாளிகளுக்கு சிகிச்சை அளிக்கிறார்கள்.,15,0.5333,3.4,NLLB-200,high_fragmentation
+10,தகவல் தொழில்நுட்பத்தில் புதிய கண்டுபிடிப்புகள் வருகின்றன.,9,0.1111,5.889,NLLB-200,low_fragmentation
+12,நம் நாட்டின் பண்பாடு மிகவும் சிறந்தது.,8,0.125,4.25,NLLB-200,low_fragmentation
+3,தமிழ் மொழி மிகவும் அழகானது.,6,0.1667,4.0,NLLB-200,low_fragmentation
+15,இயற்கை வளங்களை பாதுகாக்க வேண்டும்.,10,0.6,3.444,mBART-50,high_fragmentation
+16,அணுசக்தி மின்சாரம் உற்பத்தி செய்கிறது.,10,0.6,3.5,mBART-50,high_fragmentation
+9,சுற்றுச்சூழல் பாதுகாப்பு அனைவரின் பொறுப்பு.,12,0.5833,3.333,mBART-50,high_fragmentation
+18,கலைஞர்களின் படைப்புகள் சமூகத்தை உருவாக்குகின்றன.,9,0.1111,5.0,mBART-50,low_fragmentation
+8,பொருளாதார வளர்ச்சி நாட்டின் முன்னேற்றத்திற்கு அவசியம்.,9,0.2222,5.556,mBART-50,low_fragmentation
+2,நான் சாப்பிட்டேன்.,4,0.25,4.25,mBART-50,low_fragmentation
