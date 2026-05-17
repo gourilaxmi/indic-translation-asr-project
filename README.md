@@ -142,7 +142,7 @@ pip install -r requirements.txt
 PYTHONPATH=app:models python app/main.py
 
 # Windows
-$env:PYTHONPATH="app;models"
+$env:PYTHONPATH="app;."
 python app\main.py
 ```
 Open `http://localhost:7860` in your browser.
