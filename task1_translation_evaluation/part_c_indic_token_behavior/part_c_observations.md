@@ -13,11 +13,11 @@ agglutinative forms (e.g., `மருத்துவமனையில்` = "in
 ## Models / Tokenizers Analysed
 | Label | Tokenizer Type | Vocab Size |
 |---|---|---|
-| IndicTrans2 | SentencePiece (Indic-aware) | *(from vocab_size.png)* |
-| NLLB-200 | SentencePiece (multilingual) | *(from vocab_size.png)* |
-| Helsinki-dra | SentencePiece (Marian) | *(from vocab_size.png)* |
-| mBART-50 | SentencePiece (mBART) | *(from vocab_size.png)* |
-| MADLAD-400 | SentencePiece (T5-based) | *(from vocab_size.png)* |
+| IndicTrans2 | SentencePiece (Indic-aware) | 32322 |
+| NLLB-200 | SentencePiece (multilingual) | 256204 |
+| Helsinki-dra | SentencePiece (Marian) |62952 |
+| mBART-50 | SentencePiece (mBART) | 250054 |
+| MADLAD-400 | SentencePiece (T5-based) | 256000 |
 
 ## Architectural Changes / Fixes Applied
 
