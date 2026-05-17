@@ -1,0 +1,5 @@
+metric,corpus_score,avg_sentence_score,max_sentence_score,min_sentence_score
+chrF,40.4274,40.4735,100.0,0.0
+chrF++,35.3432,36.6363,100.0,0.0
+TER,88.5305,,,
+ROUGE-L,5.6933,5.6933,100.0,0.0
