@@ -1,10 +1,8 @@
 # Indic Translation & ASR System
 
 A two-part research and engineering project:
-1. **Task 1** — Evaluation of five English-to-Tamil translation models across translation quality, token metrics, and Indic tokenizer behavior
-2. **Task 2** — ASR-based transcription and transliteration system using Whisper and indic-transliteration, containerised with Docker
+1. **Task 2** — ASR-based transcription and transliteration system using Whisper and indic-transliteration, containerised with Docker
 
-**Gourilakshmi S **
 
 ---
 
