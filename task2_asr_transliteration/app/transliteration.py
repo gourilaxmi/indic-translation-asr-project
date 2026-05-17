@@ -7,16 +7,21 @@ from models.model_config import SOURCE_SCRIPT, TARGET_SCRIPT
 logger = logging.getLogger(__name__)
 
 SCRIPT_MAP = {
-    "tamil":     sanscript.TAMIL,
+    "tamil":      sanscript.TAMIL,
     "devanagari": sanscript.DEVANAGARI,
-    "telugu":    sanscript.TELUGU,
-    "kannada":   sanscript.KANNADA,
-    "malayalam": sanscript.MALAYALAM,
-    "latin":     sanscript.ITRANS,
-    "itrans":    sanscript.ITRANS,
-    "iast":      sanscript.IAST,
-    "slp1":      sanscript.SLP1,
+    "telugu":     sanscript.TELUGU,
+    "kannada":    sanscript.KANNADA,
+    "malayalam":  sanscript.MALAYALAM,
+    "latin":      sanscript.ITRANS,
+    "itrans":     sanscript.ITRANS,
+    "iast":       sanscript.IAST,
+    "slp1":       sanscript.SLP1,
 }
+
+INDIC_SCRIPTS = {"tamil", "telugu", "kannada", "malayalam", "devanagari"}
+
+
+BRIDGE_SCHEME = sanscript.SLP1
 
 
 def get_script(name: str):
@@ -39,13 +44,16 @@ def transliterate_text(
     src = get_script(source_script)
     tgt = get_script(target_script)
 
+    src_key = source_script.strip().lower()
+    tgt_key = target_script.strip().lower()
+
     try:
-        # Cross-Indic needs ITRANS as bridge
-        indic_scripts = {"tamil", "telugu", "kannada", "malayalam", "devanagari"}
-        if source_script in indic_scripts and target_script in indic_scripts and source_script != target_script:
-            intermediate = transliterate(text, src, sanscript.ITRANS)
-            result = transliterate(intermediate, sanscript.ITRANS, tgt)
+        if src_key in INDIC_SCRIPTS and tgt_key in INDIC_SCRIPTS and src_key != tgt_key:
+            # Two-step via SLP1 bridge for lossless cross-Indic conversion
+            intermediate = transliterate(text, src, BRIDGE_SCHEME)
+            result = transliterate(intermediate, BRIDGE_SCHEME, tgt)
         else:
+            # Same script, or romanisation target (ITRANS / IAST / SLP1 / latin)
             result = transliterate(text, src, tgt)
 
         logger.info(

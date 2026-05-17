@@ -16,11 +16,7 @@ def _timestamped_filename(prefix: str, ext: str) -> str:
 
 
 def save_transcript(text: str, output_dir: str) -> str:
-    """
-    Save a transcription string to a timestamped .txt file.
-
-    Returns the full path of the saved file.
-    """
+    
     _ensure_dir(output_dir)
     filename = _timestamped_filename("transcript", "txt")
     filepath = os.path.join(output_dir, filename)
@@ -31,11 +27,7 @@ def save_transcript(text: str, output_dir: str) -> str:
 
 
 def save_transliteration(text: str, output_dir: str) -> str:
-    """
-    Save a transliteration string to a timestamped .txt file.
-
-    Returns the full path of the saved file.
-    """
+    
     _ensure_dir(output_dir)
     filename = _timestamped_filename("transliteration", "txt")
     filepath = os.path.join(output_dir, filename)
@@ -46,13 +38,11 @@ def save_transliteration(text: str, output_dir: str) -> str:
 
 
 def read_text_file(filepath: str) -> str:
-    """Read and return the contents of a UTF-8 text file."""
     with open(filepath, "r", encoding="utf-8") as f:
         return f.read()
 
 
 def list_output_files(directory: str, ext: str = "txt") -> list:
-    """List all files with the given extension in a directory, sorted newest-first."""
     if not os.path.isdir(directory):
         return []
     files = [
@@ -64,6 +54,5 @@ def list_output_files(directory: str, ext: str = "txt") -> list:
 
 
 def format_duration(seconds: float) -> str:
-    """Human-readable duration string, e.g. '1m 23s'."""
     m, s = divmod(int(seconds), 60)
     return f"{m}m {s}s" if m else f"{s}s"

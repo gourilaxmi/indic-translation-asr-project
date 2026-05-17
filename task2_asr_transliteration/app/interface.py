@@ -81,48 +81,54 @@ def process_audio(
 
 
 def build_interface() -> gr.Blocks:
-    scripts = list_supported_scripts()
+    target_scripts = list_supported_scripts()
+    
+    FIXED_SOURCE_SCRIPT = "tamil"
 
     with gr.Blocks(title="ASR Transcription & Transliteration") as demo:
         gr.Markdown(
             """
             # ASR-Based Transcription & Transliteration System
-            Upload an audio file to transcribe it with **Whisper** and optionally
-            transliterate the output between Indic scripts using **indic-transliteration**.
+            Record live audio **or** upload a file to transcribe Tamil speech with
+            **Whisper**, then transliterate to any supported Indic / Latin script
+            using **indic-transliteration**.
+
             """
         )
 
         with gr.Row():
             with gr.Column(scale=1):
                 audio_input = gr.Audio(
-                    label="Upload Audio File",
+                    label="🎙️ Record or Upload Tamil Audio",
                     type="filepath",
-                    sources=["upload", "microphone"],
+                    sources=["microphone", "upload"],
                 )
-                source_script = gr.Dropdown(
-                    choices=scripts,
-                    value="tamil",
-                    label="Source Script (ASR output language)",
+                gr.Markdown(
+                    "**ASR Input Language:** Tamil (fixed — model is `whisper-small` "
+                    "fine-tuned with `LANGUAGE=ta`)"
                 )
                 target_script = gr.Dropdown(
-                    choices=scripts,
+                    choices=target_scripts,
                     value="latin",
-                    label="Target Script (transliteration output)",
+                    label="Transliterate to Script",
                 )
                 use_chunked = gr.Checkbox(
-                    label="Use chunked buffer pipeline",
+                    label="Use chunked buffer pipeline (for long audio)",
                     value=False,
                 )
-                submit_btn = gr.Button("▶ Transcribe & Transliterate", variant="primary")
+                submit_btn = gr.Button(
+                    "▶ Transcribe & Transliterate", variant="primary"
+                )
+                clear_btn = gr.Button("🗑️ Clear", variant="secondary")
 
             with gr.Column(scale=1):
                 transcript_out = gr.Textbox(
-                    label="ASR Transcript",
+                    label="ASR Transcript (Tamil)",
                     lines=6,
                     interactive=False,
                 )
                 translit_out = gr.Textbox(
-                    label="Transliteration",
+                    label="Transliteration Output",
                     lines=6,
                     interactive=False,
                 )
@@ -133,15 +139,23 @@ def build_interface() -> gr.Blocks:
                 )
 
         submit_btn.click(
-            fn=process_audio,
-            inputs=[audio_input, source_script, target_script, use_chunked],
+            fn=lambda audio, tgt, chunked: process_audio(
+                audio, FIXED_SOURCE_SCRIPT, tgt, chunked
+            ),
+            inputs=[audio_input, target_script, use_chunked],
             outputs=[transcript_out, translit_out, info_out],
+        )
+
+        clear_btn.click(
+            fn=lambda: (None, "", "", ""),
+            inputs=[],
+            outputs=[audio_input, transcript_out, translit_out, info_out],
         )
 
         gr.Markdown(
             "---\n"
-            "**Supported scripts:** "
-            + ", ".join(f"`{s}`" for s in scripts)
+            "**Supported transliteration targets:** "
+            + ", ".join(f"`{s}`" for s in target_scripts)
         )
 
     return demo
