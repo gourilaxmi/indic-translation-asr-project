@@ -4,7 +4,7 @@ A two-part research and engineering project:
 1. **Task 1** — Evaluation of five English-to-Tamil translation models across translation quality, token metrics, and Indic tokenizer behavior
 2. **Task 2** — ASR-based transcription and transliteration system using Whisper and indic-transliteration, containerised with Docker
 
-**Gourilakshmi S · 2023BCS0021 · B.Tech CSE · IIIT Kottayam (2023–2027)**
+**Gourilakshmi S **
 
 ---
 
@@ -53,72 +53,7 @@ indic-translation-asr-project/
     └── requirements.txt
 ```
 
----
 
-## Task 1: Evaluation of Indic Translation Models
-
-### Models Used
-
-| Model | HuggingFace ID | Role |
-|---|---|---|
-| IndicTrans2 | `ai4bharat/indictrans2-en-indic-1B` | Primary translation model (Part A) |
-| NLLB-200 | `facebook/nllb-200-distilled-600M` | Multilingual baseline |
-| Helsinki-dra | `Helsinki-NLP/opus-mt-en-dra` | Dravidian-family model |
-| mBART-50 | `facebook/mbart-large-50-many-to-many-mmt` | Explicit ta_IN support |
-| MADLAD-400 | `google/madlad400-3b-mt` | 400-language T5-based model |
-
-### Part A — Batch Translation & sacreBLEU
-- Translates 500 English sentences to Tamil using IndicTrans2
-- Evaluates using `sacrebleu` corpus and sentence BLEU
-- Outputs: `translation_outputs.csv`, `sacrebleu_results.csv`, BLEU distribution plot
-
-### Part B — Token-Based Comparative Analysis
-- All 5 models translate 15 English sentences across 3 complexity tiers
-- Computes: source/target token counts, expansion ratio, avg word length, subword fragmentation, unknown token rate
-- Outputs: `token_counts.csv`, `engineered_features.csv`, 4 comparative plots
-
-### Part C — Indic Token Behavior Analysis
-- Tokenizers only (no model inference) on 20 raw Tamil sentences
-- Measures: avg chars/token, unicode fragmentation rate, subword fragmentation, UNK rate, vocab coverage, memory footprint
-- Outputs: `tokenization_comparison.csv`, `tamil_token_patterns.csv`, 6 analysis plots
-
-### Key Findings
-- **IndicTrans2** achieves the lowest token expansion ratio and highest sacreBLEU — its Indic-trained SentencePiece vocabulary is the primary driver
-- **Helsinki-dra** maps all Tamil Unicode to `<unk>` (trained on romanised text only) — unk_rate approx 1.0
-- **NLLB-200 and MADLAD-400** are strong general multilingual alternatives with meaningful Tamil Unicode coverage
-- Tamil's agglutinative morphology causes severe fragmentation in models without native Tamil vocabulary
-- Tokenizer vocabulary design predicts translation quality more reliably than model size
-
-### Installation
-
-```bash
-git clone https://github.com/gourilaxmi/indic-translation-asr-project.git
-cd indic-translation-asr-project
-pip install -r requirements.txt
-```
-
-IndicTransToolkit (required for Parts A and B):
-
-```bash
-git clone https://github.com/AI4Bharat/IndicTrans2.git
-cd IndicTrans2/huggingface_interface
-git clone https://github.com/VarunGumma/IndicTransToolkit.git
-cd IndicTransToolkit
-pip install --editable ./
-```
-
-### Running the Notebooks
-
-All notebooks are designed for Google Colab with Google Drive mounted at:
-
-```
-/content/drive/MyDrive/indic-translation-asr-project/
-```
-
-Run in order:
-1. `task1_translation_evaluation/part_a_batch_translation/part_a_translation_evaluation.ipynb`
-2. `task1_translation_evaluation/part_b_token_analysis/part_b_token_analysis.ipynb`
-3. `task1_translation_evaluation/part_c_indic_token_behavior/part_c_indic_token_analysis.ipynb`
 
 ---
 
@@ -144,7 +79,7 @@ User Interface  (Gradio — port 7860)
 
 ### Quick Start
 
-**Option A — Local (no Docker)**
+**Option A — Local **
 
 ```bash
 cd task2_asr_transliteration
